@@ -10,8 +10,10 @@ const displayChange = (event) => {
     case "MXN":
       if (getCurrency == "USDC") {
         result = (input * tasa.mxnUsdc).toFixed(2);
-      } else {
+      } else if (getCurrency == "USDT") {
         result = (input * tasa.mxnUsdt).toFixed(2);
+      } else {
+        result = input;
       }
       break;
     case "USDC":
@@ -40,3 +42,4 @@ container.addEventListener("keyup", displayChange);
 const bigContainer = document.getElementById("conversion")
 bigContainer.addEventListener("click", displayChange);
 
+const depositarBtn = document.getElementById("depositar");

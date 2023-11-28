@@ -1,23 +1,40 @@
 body {
   background-color: #effaf6;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
 }
 
 .btn-success {
   background-color: #60c5ab;
+  border-color: #60c5ab;
   padding: 10px;
+  font-size: 120%;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #21745f;
+  border-color: #21745f;
+  transform: scale(1.02); 
 }
 
 h1 {
   color: #59cbab;
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 250%
+  font-family: 'Kanit', sans-serif;;
+  font-size: 300%;
+  font-weight: 600;
 }
 
 #bigBox {
-  width: 400px;
+  width: 380px;
   box-shadow: 0px 0px 10px rgb(128, 128, 128);
   margin: 10%;
   border-radius: 2%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#bigBox:hover {
+  transform: scale(1.01); 
 }
 
 #currency {
@@ -25,3 +42,21 @@ h1 {
 }
 /* font-family: 'Libre Franklin', sans-serif;
 font-family: 'Quattrocento', serif; */
+
+.construction-msg {
+  font-weight: 200;
+}
+
+input::placeholder {
+  font-weight: 200;
+}
+
+#fee {
+  margin: 0px 0px;
+  color: #59cbab;
+  font-weight: 600;
+}
+
+option {
+  color: #59cbab;
+}
