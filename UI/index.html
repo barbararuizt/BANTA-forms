@@ -19,67 +19,67 @@
   </head>
   <body>
     <div id="bigBox" class="container">
-        <div class="row justify-content-center p-3" id="main">
-            <div class="col-12">
-                <h1>Banta</h1>
+      <div class="row justify-content-center p-3" id="main">
+          <div class="col-12">
+            <h1>Banta</h1>
+          </div>
+          <div id="conversion">
+            <div id="sendBox" class="form-group my-1">
+              <label for="send" class="">Envías</label>
+              <div class="row">
+                <div class="col-7">
+                    <input type="number" id="send" name="send" placeholder="Monto a enviar" class="form-control">
+                </div>
+                <div class="col-5">
+                    <select id="send-currency" class="form-control">
+                        <option value="USDC">USDC</option>
+                        <option value="MXN">MXN</option>
+                        <option value="USDT">USDT</option>
+                      </select>
+                </div>
             </div>
-            <div id="conversion">
-              <div id="sendBox" class="form-group my-1">
-                  <label for="send" class="">Envías</label>
-                  <div class="row">
-                      <div class="col-7">
-                        <input type="number" id="send" name="send" placeholder="Monto a enviar" class="form-control">
-                      </div>
-                      <div class="col-5">
-                          <select id="send-currency" class="form-control">
-                              <option value="MXN">MXN</option>
-                              <option value="USDC">USDC</option>
-                              <option value="USDT">USDT</option>
+            </div>
+            <div id="receiveBox" class="form-group my-1">
+                <label for="send" class="">Recibes</label>
+                <div class="row">
+                    <div class="col-7">
+                        <input type="number" id="receive" name="receive" placeholder="Monto a recibir" readonly class="form-control">
+                    </div>
+                    <div class="col-5">
+                        <select id="receive-currency" class="form-control">
+                            <option value="USDC">USDC</option>
+                            <option value="MXN">MXN</option>
+                            <option value="USDT">USDT</option>
                           </select>
-                      </div>
-                  </div>
-              </div>
-              <div id="receiveBox" class="form-group my-1">
-                  <label for="send" class="">Recibes</label>
-                  <div class="row">
-                      <div class="col-7">
-                          <input type="number" id="receive" name="receive" placeholder="Monto a recibir" readonly class="form-control">
-                      </div>
-                      <div class="col-5">
-                          <select id="receive-currency" class="form-control">
-                              <option value="USDC">USDC</option>
-                              <option value="MXN">MXN</option>
-                              <option value="USDT">USDT</option>
-                            </select>
-                      </div>
-                  </div>
-              </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group mt-2 my-1">
-                <label for="address">Tu dirección</label>
-                <input type="text" id="address" name="address" class="form-control" placeholder="Indica tu dirección de ETH">
-            </div>
-            
-            <div class="form-group my-1">
-                <label for="network">Red a recibir</label>
-                <select id="network" class="form-control">
-                    <option value="Arbitrum">Arbitrum</option>
-                    <option value="Polygon">Polygon</option>
-                </select>
-            </div>
+          </div>
+          <div class="form-group mt-2 my-1">
+              <label for="address">Tu dirección</label>
+              <input type="text" id="address" name="address" class="form-control" placeholder="Indica tu dirección de ETH">
+          </div>
+          
+          <div class="form-group my-1">
+              <label for="network">Red a recibir</label>
+              <select id="network" class="form-control">
+                  <option value="Arbitrum">Arbitrum</option>
+                  <option value="Polygon">Polygon</option>
+              </select>
+          </div>
 
-            <div class="row my-3" id="comision">
-                <label class="col-6" for="fee">Comisión de depósito</label>
-                <p class="col-6" id="fee">2 USDT</p> 
-            </div>
+          <div class="row my-3" id="comision">
+              <label class="col-6" for="fee">Comisión de depósito</label>
+              <p class="col-6" id="fee">2 USDT</p> 
+          </div>
 
-            <div class="form-group row" id="continuar">
-              <button id="continue" class="btn btn-success">Depositar</button>
-              <div class="construction-msg text-center my-4" id="construction-msg">
-                We are under construction
-              </div>
+          <div class="form-group row" id="continuar">
+            <button id="continue" class="btn btn-success">Depositar</button>
+            <div class="construction-msg text-center my-4" id="construction-msg">
+              We are under construction
             </div>
-        </div>
+          </div>
+      </div>
     </div>
     
     <script src="lib/index.js"></script>

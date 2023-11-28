@@ -13,5 +13,13 @@ h1 {
   font-size: 250%
 }
 
+#main {
+  width: 500px;
+
+}
+
+#currency {
+  text-align: left;
+}
 /* font-family: 'Libre Franklin', sans-serif;
 font-family: 'Quattrocento', serif; */
