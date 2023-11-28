@@ -10,4 +10,8 @@ body {
 h1 {
   color: #59cbab;
   font-style: strong;
+  font-family: 'Libre Franklin', sans-serif;
 }
+
+/* font-family: 'Libre Franklin', sans-serif;
+font-family: 'Quattrocento', serif; */
