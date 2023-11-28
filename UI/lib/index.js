@@ -1,4 +1,3 @@
-
 const displayChange = (event) => {
   event.preventDefault()
   const input = document.getElementById("send").value;
@@ -10,29 +9,28 @@ const displayChange = (event) => {
   switch (sendCurrency) {
     case "MXN":
       if (getCurrency == "USDC") {
-        result = input * tasa.mxnUsdc;
+        result = (input * tasa.mxnUsdc).toFixed(2);
       } else {
-        result = input * tasa.mxnUsdt;
+        result = (input * tasa.mxnUsdt).toFixed(2);
       }
       break;
     case "USDC":
       if (getCurrency == "MXN") {
-        result = input * tasa.usdcMxn;
+        result = (input * tasa.usdcMxn).toFixed(2);
       } else {
-        result = input;
+        result = input * 1;
       }
       break;
     case "USDT":
       if (getCurrency == "MXN") {
-        result = input * tasa.usdtMxn;
+        result = (input * tasa.usdtMxn).toFixed(2);
       } else {
-        result = input;
+        result = input * 1;
       }
   }
   
   const output = document.getElementById("receive");
-  output.value = result.toFixed(2);
-
+  output.value = result;
 };
 
 
@@ -40,5 +38,5 @@ const container = document.getElementById("sendBox")
 container.addEventListener("keyup", displayChange);
 
 const bigContainer = document.getElementById("conversion")
-bigContainer.addEventListener("change", displayChange);
+bigContainer.addEventListener("click", displayChange);
 

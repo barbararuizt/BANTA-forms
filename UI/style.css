@@ -13,9 +13,11 @@ h1 {
   font-size: 250%
 }
 
-#main {
-  width: 500px;
-
+#bigBox {
+  width: 400px;
+  box-shadow: 0px 0px 10px rgb(128, 128, 128);
+  margin: 10%;
+  border-radius: 2%;
 }
 
 #currency {
