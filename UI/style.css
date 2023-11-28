@@ -1,0 +1,13 @@
+body {
+  background-color: #effaf6;
+}
+
+.btn-success {
+  background-color: #60c5ab;
+  padding: 10px;
+}
+
+h1 {
+  color: #59cbab;
+  font-style: strong;
+}
